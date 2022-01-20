@@ -24,10 +24,6 @@ public final class Constants {
         public static final boolean kLeftEncoderReversed = false;
         public static final boolean kRightEncoderReversed = true;
 
-        public static final double kTrackwidthMeters = 0.141;
-        public static final DifferentialDriveKinematics kDriveKinematics = new DifferentialDriveKinematics(
-                kTrackwidthMeters);
-
         public static final double kEncoderCPR = 1440.0;
         public static final double kWheelDiameterMeters = 0.07;
         public static final double kEncoderDistancePerPulse =
@@ -41,12 +37,15 @@ public final class Constants {
         // The Robot Characterization Toolsuite provides a convenient tool for obtaining
         // these
         // values for your robot.
-        public static final double ksVolts = 0.22;
-        public static final double kvVoltSecondsPerMeter = 1.98;
-        public static final double kaVoltSecondsSquaredPerMeter = 0.2;
+        public static final double ksVolts = 0.929;
+        public static final double kvVoltSecondsPerMeter = 6.33;
+        public static final double kaVoltSecondsSquaredPerMeter = 0.0389;
 
-        // Example value only - as above, this must be tuned for your drive!
-        public static final double kPDriveVel = 8.5;
+        public static final double kPDriveVel = 0.085;
+
+        public static final double kTrackwidthMeters = 0.142072613;
+        public static final DifferentialDriveKinematics kDriveKinematics = new DifferentialDriveKinematics(
+                kTrackwidthMeters);
     }
 
     public static final class OIConstants {
@@ -54,8 +53,8 @@ public final class Constants {
     }
 
     public static final class AutoConstants {
-        public static final double kMaxSpeedMetersPerSecond = 3;
-        public static final double kMaxAccelerationMetersPerSecondSquared = 3;
+        public static final double kMaxSpeedMetersPerSecond = 0.8;
+        public static final double kMaxAccelerationMetersPerSecondSquared = 0.8;
 
         // Reasonable baseline values for a RAMSETE follower in units of meters and
         // seconds
